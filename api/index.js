@@ -16,4 +16,4 @@ app.get("/about", (req, res) => res.render("about"));
 app.get("/resume", (req, res) => res.render("resume"));
 
 module.exports = app;
-module.exports.handler = serverless(app); // <-- Required by Vercel
+//module.exports.handler = serverless(app); // <-- Required by Vercel
