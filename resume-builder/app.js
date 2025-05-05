@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Routes
+// Define routes
 app.get('/', (req, res) => {
     res.render('index');
 });
@@ -22,6 +22,11 @@ app.get('/self-introduction', (req, res) => {
 
 app.get('/work-resume', (req, res) => {
     res.render('work-resume');
+});
+
+// If you want to add a new route for /resume-builder
+app.get('/resume-builder', (req, res) => {
+    res.render('resume-builder'); // Ensure you have a corresponding EJS file
 });
 
 // Start the server
