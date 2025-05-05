@@ -1,0 +1,52 @@
+/* styles.css */
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4; /* Light mode background */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+/* Light mode styles */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode .sidebar {
+    background-color: #f4f4f4;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212; /* Dark mode background */
+    color: #ffffff;
+}
+
+.dark-mode .sidebar {
+    background-color: #1e1e1e; /* Dark sidebar */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
