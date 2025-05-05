@@ -7,11 +7,7 @@
   <script src="/script.js" defer></script>
 </head>
 <body class="<%= dark ? 'dark-mode' : '' %>">
-  <div class="container">
-    <%- include('partials/sidebar', { page }) %>
-    <main class="content">
-      <%- body %>
-    </main>
-  </div>
+  <%- include('partials/sidebar') %>
+  <%- body %> <!-- This will render the page-specific content -->
 </body>
 </html>
