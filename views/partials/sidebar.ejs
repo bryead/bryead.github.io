@@ -1,0 +1,15 @@
+<aside class="sidebar">
+  <h2>Bryan Tan Min Jun</h2>
+  <p>DOB: 30 November 2000</p>
+  <p>Nationality: Singaporean</p>
+  <p>Email: <a href="mailto:bryantan3011@live.com">bryantan3011@live.com</a></p>
+  <a href="https://www.linkedin.com/in/bryead/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon">
+  </a>
+  <nav>
+    <% if (page !== 'index') { %><a href="/">Home</a><% } %>
+    <% if (page !== 'about') { %><a href="/about">Self Introduction</a><% } %>
+    <% if (page !== 'resume') { %><a href="/resume">Resume</a><% } %>
+    <button id="modeToggle">Toggle Mode</button>
+  </nav>
+</aside>

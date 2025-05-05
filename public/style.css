@@ -2,56 +2,54 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     transition: background 0.5s ease, color 0.5s ease;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     min-height: 100vh;
-  }
-  
-  .sidebar {
+}
+
+.sidebar {
     width: 250px;
     background-color: #f3f3f3;
     padding: 20px;
     position: fixed;
     height: 100%;
     transition: background 0.5s;
-  }
-  
-  .content {
+}
+
+.content {
     margin-left: 270px;
     padding: 20px;
     transition: background 0.5s, color 0.5s;
-  }
-  
-  .icon {
+}
+
+.icon {
     width: 24px;
     margin: 10px 0;
-  }
-  
-  .dark-mode {
+}
+
+.dark-mode {
     background-color: #121212;
     color: white;
-  }
-  
-  .dark-mode .sidebar {
+}
+
+.dark-mode .sidebar {
     background-color: #1e1e1e;
-  }
-  
+}
+
 /* Default link style */
 a {
     color: #0066cc !important;
     text-decoration: none;
     transition: color 0.3s;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-  /* Dark mode override */
-  body.dark-mode a {
+}
+
+/* Dark mode override */
+body.dark-mode a {
     color: #66b2ff !important;
-  }
-  
-  
+}
