@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/style.css">
   <script src="/script.js" defer></script>
 </head>
-<body class="<%= typeof dark !== 'undefined' && dark ? 'dark-mode' : '' %>">
+<body class="<%- dark ? 'dark-mode' : '' %>">
   <div class="container">
     <!-- Sidebar inclusion -->
     <%- include('partials/sidebar') %>
