@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %></title>
   <link rel="stylesheet" href="/style.css">
   <script src="/script.js" defer></script>
 </head>
 <body class="<%= dark ? 'dark-mode' : '' %>">
-  <%- include('partials/sidebar') %>
-  <%- body %> <!-- This will render the page-specific content -->
+  <div class="container">
+    <!-- Sidebar inclusion -->
+    <%- include('partials/sidebar') %>
+    
+    <!-- Main Content -->
+    <main class="content">
+      <%- body %> <!-- Render the content of the individual page -->
+    </main>
+  </div>
 </body>
 </html>
