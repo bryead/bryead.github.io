@@ -38,8 +38,9 @@ body {
     background-color: #1e1e1e;
   }
   
-  a {
-    color: #0066cc; /* Blue for light mode */
+/* Default link style */
+a {
+    color: #0066cc !important;
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -48,7 +49,9 @@ body {
     text-decoration: underline;
   }
   
-  .dark-mode a {
-    color: #66b2ff; /* Light blue for dark mode */
+  /* Dark mode override */
+  body.dark-mode a {
+    color: #66b2ff !important;
   }
+  
   
