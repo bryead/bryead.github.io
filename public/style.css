@@ -38,3 +38,17 @@ body {
     background-color: #1e1e1e;
   }
   
+  a {
+    color: #0066cc; /* Blue for light mode */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .dark-mode a {
+    color: #66b2ff; /* Light blue for dark mode */
+  }
+  
