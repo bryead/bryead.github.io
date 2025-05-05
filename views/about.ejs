@@ -1,15 +1,33 @@
-<%- include('partials/sidebar') %>
-<% layout('layout', { title: 'About - Bryan Tan', page: 'about' }) %>
-<h1>Self Introduction</h1>
-<section>
-  <h2>Hobbies</h2>
-  <p>[Add your hobbies here]</p>
-</section>
-<section>
-  <h2>Strengths</h2>
-  <p>[List your strengths]</p>
-</section>
-<section>
-  <h2>Weaknesses</h2>
-  <p>[List your weaknesses]</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Bryan Tan</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <%- include('partials/sidebar') %>
+
+    <main class="content">
+      <h1>Self Introduction</h1>
+
+      <section>
+        <h2>Hobbies</h2>
+        <p>[Add your hobbies here]</p>
+      </section>
+
+      <section>
+        <h2>Strengths</h2>
+        <p>[List your strengths]</p>
+      </section>
+
+      <section>
+        <h2>Weaknesses</h2>
+        <p>[List your weaknesses]</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
