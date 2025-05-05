@@ -13,3 +13,7 @@ app.get("/about", (req, res) => res.render("about", { layout: "layout", page: "a
 app.get("/resume", (req, res) => res.render("resume", { layout: "layout", page: "resume", title: "Resume", dark: false }));
 
 module.exports = app;
+/* app.listen(3000, () => {
+    console.log("Server is running on http://localhost:3000");
+  });
+  */
